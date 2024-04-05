@@ -1,0 +1,46 @@
+[
+  {
+    "productId": 1,
+    "productName": "GTX1660",
+    "productPrice": 10000,
+    "productRate": 4,
+    "productImage": "https://content2.rozetka.com.ua/goods/images/big/288153948.jpg",
+    "productDescription": "",
+    "subcategory": {
+      "subcategoryId": 1
+    }
+  },
+  {
+    "productId": 2,
+    "productName": "RTX4070",
+    "productPrice": 20000,
+    "productRate": 5,
+    "productImage": "https://content1.rozetka.com.ua/goods/images/big/327417896.jpg",
+    "productDescription": "",
+    "subcategory": {
+      "subcategoryId": 1
+    }
+  },
+  {
+    "productId": 3,
+    "productName": "RTX4070 ti",
+    "productPrice": 25000,
+    "productRate": 5,
+    "productImage": "https://content1.rozetka.com.ua/goods/images/big/327417896.jpg",
+    "productDescription": "",
+    "subcategory": {
+      "subcategoryId": 1
+    }
+  },
+  {
+    "productId": 4,
+    "productName": "RTX4070 super",
+    "productPrice": 22500,
+    "productRate": 4,
+    "productImage": "https://content1.rozetka.com.ua/goods/images/big/327417896.jpg",
+    "productDescription": "",
+    "subcategory": {
+      "subcategoryId": 1
+    }
+  }
+]

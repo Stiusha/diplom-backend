@@ -1,0 +1,30 @@
+[
+  {
+    "characteristicId": 1,
+    "characteristicName": "Кол-во TeraFlops",
+    "subcategory": {
+      "subcategoryId": 1
+    }
+  },
+  {
+    "characteristicId": 2,
+    "characteristicName": "Трассировка лучей",
+    "subcategory": {
+      "subcategoryId": 1
+    }
+  },
+  {
+    "characteristicId": 3,
+    "characteristicName": "Цена",
+    "subcategory": {
+      "subcategoryId": 2
+    }
+  },
+  {
+    "characteristicId": 4,
+    "characteristicName": "Видеоядро",
+    "subcategory": {
+      "subcategoryId": 2
+    }
+  }
+]

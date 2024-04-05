@@ -1,0 +1,66 @@
+[
+  {
+    "subcategoryId": 1,
+    "subcategoryName": "Відеокарти",
+    "subcategoryImage": "https://content1.rozetka.com.ua/goods/top/original/228453361.jpg",
+    "category": {
+      "categoryId": 1
+    }
+  },
+  {
+    "subcategoryId": 2,
+    "subcategoryName": "Процесори",
+    "subcategoryImage": "https://content1.rozetka.com.ua/goods/top/original/228453357.jpg",
+    "category": {
+      "categoryId": 1
+    }
+  },
+  {
+    "subcategoryId": 3,
+    "subcategoryName": "Материнські плати",
+    "subcategoryImage": "https://content1.rozetka.com.ua/goods/top/original/228453356.jpg",
+    "category": {
+      "categoryId": 1
+    }
+  },
+  {
+    "subcategoryId": 4,
+    "subcategoryName": "Оперативна пам'ять",
+    "subcategoryImage": "https://content1.rozetka.com.ua/goods/top/original/228453355.jpg",
+    "category": {
+      "categoryId": 1
+    }
+  },
+  {
+    "subcategoryId": 5,
+    "subcategoryName": "Блоки живлення",
+    "subcategoryImage": "https://content2.rozetka.com.ua/goods/top/original/228453360.jpg",
+    "category": {
+      "categoryId": 1
+    }
+  },
+  {
+    "subcategoryId": 6,
+    "subcategoryName": "Корпуси",
+    "subcategoryImage": "https://content.rozetka.com.ua/goods/top/original/228453364.jpg",
+    "category": {
+      "categoryId": 1
+    }
+  },
+  {
+    "subcategoryId": 7,
+    "subcategoryName": "Системи охолодження",
+    "subcategoryImage": "https://content2.rozetka.com.ua/goods/top/original/228453366.jpg",
+    "category": {
+      "categoryId": 1
+    }
+  },
+  {
+    "subcategoryId": 8,
+    "subcategoryName": "SSD",
+    "subcategoryImage": "https://content1.rozetka.com.ua/goods/top/original/228453373.gif",
+    "category": {
+      "categoryId": 1
+    }
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "characteristicValueId": 1,
+    "characteristicValue": "10101",
+    "characteristic": {
+      "characteristicId": 1
+    }
+  },
+  {
+    "characteristicValueId": 2,
+    "characteristicValue": "20202",
+    "characteristic": {
+      "characteristicId": 1
+    }
+  },
+  {
+    "characteristicValueId": 3,
+    "characteristicValue": "Да",
+    "characteristic": {
+      "characteristicId": 2
+    }
+  },
+  {
+    "characteristicValueId": 4,
+    "characteristicValue": "Нет",
+    "characteristic": {
+      "characteristicId": 2
+    }
+  },
+  {
+    "characteristicValueId": 5,
+    "characteristicValue": "22404",
+    "characteristic": {
+      "characteristicId": 1
+    }
+  }
+]

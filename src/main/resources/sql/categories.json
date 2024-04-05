@@ -1,0 +1,32 @@
+[
+  {
+    "categoryId": 1,
+    "categoryName": "Комп'ютерні комплектуючі",
+    "categoryImage": "https://video.rozetka.com.ua/img_superportal/kompyutery_i_noutbuki/kompyuternye-komplektuyushchie.png"
+  },
+  {
+    "categoryId": 2,
+    "categoryName": "Мережеве обладнання",
+    "categoryImage": "https://video.rozetka.com.ua/img_superportal/kompyutery_i_noutbuki/setevoe-oborudovanie.png"
+  },
+  {
+    "categoryId": 3,
+    "categoryName": "Навушники та аксесуари",
+    "categoryImage": "https://video.rozetka.com.ua/img_superportal/kompyutery_i_noutbuki/naushniki-i-aksessuary.png"
+  },
+  {
+    "categoryId": 4,
+    "categoryName": "Клавіатури та миші",
+    "categoryImage": "https://video.rozetka.com.ua/img_superportal/kompyutery_i_noutbuki/klaviatury-i-myshi.png"
+  },
+  {
+    "categoryId": 5,
+    "categoryName": "Аксесуари для електроніки",
+    "categoryImage": "https://video.rozetka.com.ua/img_superportal/kompyutery_i_noutbuki/aksessuari-dlia-elektronyky.png"
+  },
+  {
+    "categoryId": 6,
+    "categoryName": "Офісна техніка",
+    "categoryImage": "https://video.rozetka.com.ua/img_superportal/kompyutery_i_noutbuki/ofisnaya-tekhnika.png"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "product": {
+      "productId": 1
+    },
+    "characteristicValue": {
+      "characteristicValueId": 1,
+      "characteristic": {
+        "characteristicId": 1
+      }
+    }
+  },
+  {
+    "id": 2,
+    "product": {
+      "productId": 1
+    },
+    "characteristicValue": {
+      "characteristicValueId": 4,
+      "characteristic": {
+        "characteristicId": 2
+      }
+    }
+  },
+  {
+    "id": 3,
+    "product": {
+      "productId": 2
+    },
+    "characteristicValue": {
+      "characteristicValueId": 2,
+      "characteristic": {
+        "characteristicId": 1
+      }
+    }
+  },
+  {
+    "id": 4,
+    "product": {
+      "productId": 2
+    },
+    "characteristicValue": {
+      "characteristicValueId": 3,
+      "characteristic": {
+        "characteristicId": 2
+      }
+    }
+  },
+  {
+    "id": 5,
+    "product": {
+      "productId": 3
+    },
+    "characteristicValue": {
+      "characteristicValueId": 5,
+      "characteristic": {
+        "characteristicId": 1
+      }
+    }
+  },
+  {
+    "id": 6,
+    "product": {
+      "productId": 3
+    },
+    "characteristicValue": {
+      "characteristicValueId": 3,
+      "characteristic": {
+        "characteristicId": 2
+      }
+    }
+  }
+]
