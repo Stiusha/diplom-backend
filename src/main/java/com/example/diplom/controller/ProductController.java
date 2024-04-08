@@ -3,11 +3,12 @@ package com.example.diplom.controller;
 import com.example.diplom.dto.ProductDto;
 import com.example.diplom.dto.search.FilterDto;
 import com.example.diplom.service.ProductService;
+import com.example.diplom.utils.ProductSort;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Optional;
+import java.util.List;
 import java.util.Set;
 
 @RestController
@@ -35,8 +36,11 @@ public class ProductController {
 //    }
 
     @PostMapping
-    public ResponseEntity<Set<ProductDto>> filterProducts(@RequestBody FilterDto filter) {
-        Set<ProductDto> products = service.filter(filter);
+    public ResponseEntity<List<ProductDto>> filterProducts(
+            @RequestBody FilterDto filter,
+            @RequestParam(value = "sort", required = false) Integer sortParam) {
+        ProductSort sort = ProductSort.byCode(sortParam);
+        List<ProductDto> products = service.filter(filter, sort);
         return ResponseEntity.ok(products);
     }
 }
