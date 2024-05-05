@@ -1,15 +1,36 @@
 server:
   port: 2004
 
+
+#pg:
+#  data-source:
+#    host: localhost
+#    port: 5432
+#    name: diplom-db
+#    username: postgres
+#    password: demo
+#    driverClassName: org.postgresql.Driver
+#    jdbcUrl: jdbc:postgresql://${pg.data-source.host}:${pg.data-source.port}/${pg.data-source.name}
+#spring:
+#  jpa:
+#    generate-ddl: true
+#    hibernate.ddl-auto: create-drop
+#    show-sql: true
+#    properties:
+#      hibernate:
+#        generate_statistics: false
+#        format_sql: true
+
+
 pg:
   data-source:
-    host: localhost
-    port: 5432
-    name: diplom-db
-    username: postgres
-    password: demo
-    driverClassName: org.postgresql.Driver
-    jdbcUrl: jdbc:postgresql://${pg.data-source.host}:${pg.data-source.port}/${pg.data-source.name}
+    host: mem
+    port: 9006
+    name: diplom
+    username: sa
+    password: sa
+    driverClassName: org.h2.Driver
+    jdbcUrl: jdbc:h2:${pg.data-source.host}:${pg.data-source.port}/${pg.data-source.name}
 
 spring:
   jpa:
@@ -18,5 +39,6 @@ spring:
     show-sql: true
     properties:
       hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
         generate_statistics: false
         format_sql: true

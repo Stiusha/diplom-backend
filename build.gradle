@@ -21,20 +21,11 @@ repositories {
     mavenCentral()
 }
 
-//jar {
-//    // Указываем точку входа (если есть)
-//     mainClassName = 'com.example.diplom.DiplomApplication'
-//    // mainClassName = project.getProperty('mainClassName')
-//
-//    // Определяем, какие файлы и папки должны быть включены в JAR
-//    // from sourceSets.main.output
-//    // include 'META-INF/**'
-//}
-
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    runtimeOnly 'org.postgresql:postgresql'
+//    runtimeOnly 'org.postgresql:postgresql'
+    runtimeOnly 'com.h2database:h2'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     implementation 'commons-io:commons-io:2.15.1'
