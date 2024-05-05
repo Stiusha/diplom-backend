@@ -55,15 +55,6 @@ public class ProductJdbcRepository {
 
         sql += " " + sort.getRequest();
 
-        return jdbcTemplate.query(sql, (rs, rowNum) -> {
-            ProductEntity product = new ProductEntity();
-            product.setProductId(rs.getLong("product_id"));
-            product.setProductName(rs.getString("product_name"));
-            product.setProductPrice(rs.getLong("product_price"));
-            product.setProductRate(rs.getLong("product_rate"));
-            product.setProductImage(rs.getString("product_image"));
-            product.setProductDescription(rs.getString("product_description"));
-            return product;
-        });
+        return jdbcTemplate.query(sql, (rs, rowNum) -> ProductEntity.byResultSet(rs));
     }
 }

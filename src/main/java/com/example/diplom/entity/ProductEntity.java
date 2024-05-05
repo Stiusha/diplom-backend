@@ -6,6 +6,9 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 @ToString
 @Getter
 @Setter
@@ -37,4 +40,15 @@ public class ProductEntity {
     @ManyToOne
     @JoinColumn(name = "subcategory_id")
     private SubcategoryEntity subcategory;
+
+    public static ProductEntity byResultSet(ResultSet rs) throws SQLException {
+        ProductEntity product = new ProductEntity();
+        product.setProductId(rs.getLong("product_id"));
+        product.setProductName(rs.getString("product_name"));
+        product.setProductPrice(rs.getLong("product_price"));
+        product.setProductRate(rs.getLong("product_rate"));
+        product.setProductImage(rs.getString("product_image"));
+        product.setProductDescription(rs.getString("product_description"));
+        return product;
+    }
 }
