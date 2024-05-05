@@ -6,6 +6,7 @@ plugins {
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
+//mainClassName = 'com.example.diplom.DiplomApplication'
 
 java {
     sourceCompatibility = '17'
@@ -19,6 +20,10 @@ configurations {
 
 repositories {
     mavenCentral()
+}
+
+jar {
+    enabled = false
 }
 
 dependencies {
