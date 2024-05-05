@@ -1,0 +1,25 @@
+version: '1'
+
+services:
+  diplom-backend:
+    image: 'diplom-backend-ms-image'
+    depends_on:
+      - db
+    container_name: 'diplom-backend-ms-container'
+
+  db:
+    image: 'postgres'
+    container_name: 'diplom-db-container'
+    ports:
+      - 5432:5432
+    environment:
+      - PGDATA=/var/lib/postgresql/data
+      - POSTGRES_DB=diplom-db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=demo
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
+    external: true
