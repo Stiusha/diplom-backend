@@ -27,10 +27,10 @@ services:
       - my-network
 
   nginx:
-    image: nginx:latest
+    image: "diplom-nginx-image"
     container_name: 'diplom-nginx-container'
     ports:
-      - "80:80"
+      - "2004:2004"
     build:
       context: ./nginx
       dockerfile: Dockerfile
