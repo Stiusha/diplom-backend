@@ -1,17 +1,10 @@
 version: '1'
 
 services:
-  diplom-backend:
-    image: 'diplom-backend-ms-image'
-    depends_on:
-      - db
-    container_name: 'diplom-backend-ms-container'
 
   db:
     image: 'postgres'
     container_name: 'diplom-db-container'
-    ports:
-      - 5432:5432
     environment:
       - PGDATA=/var/lib/postgresql/data
       - POSTGRES_DB=diplom-db
@@ -19,7 +12,37 @@ services:
       - POSTGRES_PASSWORD=demo
     volumes:
       - pgdata:/var/lib/postgresql/data
+    networks:
+      - my-network
+
+  diplom-backend:
+    image: 'diplom-backend-ms-image'
+    container_name: 'diplom-backend-ms-container'
+    depends_on:
+      - db
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - my-network
+
+  nginx:
+    image: nginx:latest
+    container_name: 'diplom-nginx-container'
+    ports:
+      - "80:80"
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    depends_on:
+      - diplom-backend
+    networks:
+      - my-network
 
 volumes:
   pgdata:
     external: true
+
+networks:
+  my-network:
+    driver: bridge
