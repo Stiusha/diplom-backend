@@ -7,3 +7,6 @@ START SCRIPT
 <li>docker-compose build
 <li>docker-compose up
 </ul>
+
+http://localhost:2004/v3/api-docs
+http://localhost:2004/swagger-ui/index.html

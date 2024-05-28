@@ -3,6 +3,7 @@ package com.example.diplom.controller;
 import com.example.diplom.dto.CategoryDto;
 import com.example.diplom.service.CategoryService;
 import lombok.AllArgsConstructor;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,7 +19,7 @@ public class CategoryController {
 
     private final CategoryService service;
 
-    @GetMapping
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Set<CategoryDto>> getCategories() {
         Set<CategoryDto> categories = service.findAll();
         if (categories == null || categories.isEmpty()) {

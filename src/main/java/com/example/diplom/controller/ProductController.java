@@ -5,6 +5,7 @@ import com.example.diplom.dto.search.FilterDto;
 import com.example.diplom.service.ProductService;
 import com.example.diplom.utils.ProductSort;
 import lombok.AllArgsConstructor;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,7 +19,7 @@ public class ProductController {
 
     private final ProductService service;
 
-    @GetMapping("/{productId}")
+    @GetMapping(value = "/{productId}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<ProductDto> getProduct(@PathVariable("productId") Long productId) {
         return service.findByProductId(productId)
                 .map(ResponseEntity::ok)
@@ -35,7 +36,7 @@ public class ProductController {
 //        }
 //    }
 
-    @PostMapping
+    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<ProductDto>> filterProducts(
             @RequestBody FilterDto filter,
             @RequestParam(value = "sort", required = false) Integer sortParam) {

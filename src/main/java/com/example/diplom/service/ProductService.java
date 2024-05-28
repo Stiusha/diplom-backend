@@ -33,7 +33,4 @@ public class ProductService {
                 .collect(Collectors.toList());
     }
 
-    public FilterPriceFakeEntity findMinMaxPrice(Long subcategoryId) {
-        return repository.findMinMaxPrice(subcategoryId);
-    }
 }
